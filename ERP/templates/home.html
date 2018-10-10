@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block breadcrumb %}
+	<li class="breadcrumb-item active">Login</li>
+{% endblock %}
+
+{% block content %}
+	<table class="table">
+		<thead class="thead-inverse">
+			<tr>
+				<th>Board</th>
+				<th>Posts</th>
+				<th>Topics</th>
+				<th>Last Post</th>
+			</tr>
+		</thead>
+		<div class="card-footer text-center">
+				<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus">Cadastrar fornecedor ?</span></a>
+		</div>
+	</table>
+{% endblock %}

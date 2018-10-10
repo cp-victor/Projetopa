@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="post">
+        <h1>{{ forn.nameforn }}</h1>
+        <p>{{ forn.cnpj|linebreaksbr }}</p>
+    </div>
+{% endblock %}
